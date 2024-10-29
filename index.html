@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/all.min.css">
+  <link rel="stylesheet" href="./src/css/output.css">
+  <title>Books</title>
+  <link rel="icon" href="./images/logo.webp" sizes="48x48" type="image/x-icon">
+</head>
+<body>
+  <header class="bg-[url('./images/bg.png')] bg-cover bg-center h-screen w-full">
+
+<nav>
+  <img src="./images/logo.png" class="w-32 h-32 ms-14" alt="logo">
+</nav>
+
+
+
+<div class="inputs flex justify-center flex-col items-center ">
+  <div class="mb-6 w-1/2 me-28">
+    <label for="input1" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Book Name</label>
+    <input placeholder="Enter Book Name" type="text" id="input1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+</div>
+<div class="mb-6 w-1/2 me-28">
+  <label for="input2" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Author Name</label>
+
+  <input placeholder="Enter Author Name" type="text" id="input2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+</div>
+<div class="mb-6 w-1/2 me-28">
+  <label for="input3" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Book Image</label>
+  <input placeholder="Insert Image`s Book" type="file" id="input3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+</div>
+<div class="mb-6 w-1/2 me-28">
+  <label for="input4" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">File</label>
+  <input 
+    placeholder="Upload File" 
+    type="file" 
+    id="input4" 
+    accept="application/pdf" 
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+</div>
+<div class="buttons flex gap-4">
+  <button type="button" id="add" class="focus:outline-none text-white bg-yellow-600 hover:bg-yellow-500 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Add Book</button>  
+</div>
+
+
+</div>
+  </header>
+
+
+<section class="my-20">
+
+  <h1 class="text-center font-bold font-serif text-7xl text-amber-600">My Books</h1>
+  <div class="search flex justify-center items-center my-10">
+    <select id="searchOption">
+      <option value="name">Book Name</option>
+      <option value="author">Author Name</option>
+    </select>
+  
+  <input type="search" id="searchInput" placeholder="search..." class="mx-3 p-2 focus:border-green-900 focus:outline-green-600">
+  
+  </div>
+
+  <div class="grid lg:grid-cols-4 gap-4 my-20 mx-4" id="display">
+    
+      </div>
+</section>
+
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
